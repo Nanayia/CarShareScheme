@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: 2.2;
+  letter-spacing: 2.2px;
 }
 p {
 
@@ -336,7 +336,7 @@ i.fa.fa-angle-right{
 }
 
 .bg-banner {
-    background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)), url(../img/bg-banner.jpg);
+    background: linear-gradient(rgba(28, 30, 50, .9), rgba(28, 30, 50, .9)), url(../resources/static/img/bg-banner.jpg);
     background-attachment: fixed;
 }
 
@@ -397,7 +397,7 @@ i.fa.fa-angle-right{
 .forget a:hover{
 	color: #242424;
 }
-::placehoulder{
+.placehoulder{
 	color: #8fdb57;
 }
 
