@@ -11,7 +11,7 @@ import java.util.Date;
 
 
 @Entity(name = "CarTable")
-@NoArgsConstructor
+
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Data
 @Builder
@@ -41,7 +41,7 @@ public class Car  {
         return id;
     }
 
-    public String getCarName() {
+    public String getcarName() {
         return carName;
     }
 
@@ -53,4 +53,13 @@ public class Car  {
         return carPrice;
     }
 
+    public void setID(Long id) {this.id = id;}
+
+    public void setgetcarName (String carName) {this.carName = carName;}
+
+    public void setgetcarModel (String carModel) {this.carModel = carModel;}
+
+    public void setgetcarColor (String carColor) {this.carColor = carColor;}
+
+    public void setgetcarPrice (String carPrice) {this.carPrice = carPrice;}
 }

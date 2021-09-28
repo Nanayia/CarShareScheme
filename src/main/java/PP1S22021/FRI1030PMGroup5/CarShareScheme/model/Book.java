@@ -1,18 +1,13 @@
 package PP1S22021.FRI1030PMGroup5.CarShareScheme.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
-import java.util.Collection;
 import java.util.Date;
 
 
 @Entity(name = "BookTable")
-@NoArgsConstructor
+
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Data
 @Builder
@@ -38,7 +33,7 @@ public class Book {
     private Date pickupDate;
 
     @Column(name = "dropoffDate", columnDefinition = "Date")
-    private String dropoffDate;
+    private Date dropoffDate;
 
 
 
@@ -49,13 +44,34 @@ public class Book {
         return id;
     }
 
-    public String getUserID() {
+    public String getuserID() {
         return userID;
     }
+
+    public String getcarType() {return carType;}
 
     public String getpickUp() { return pickUp; }
 
     public String getdropOff() { return dropOff; }
+
+    public Date getPickupDate() { return pickupDate; }
+
+    public Date getdropoffDate() { return dropoffDate; }
+
+    public void setID(Long id) {this.id = id;}
+
+    public void setUserID (String userID) {this.userID = userID;}
+
+    public void setCarType (String carType) {this.carType = carType;}
+
+    public void setPickUp (String pickUp) {this.pickUp = pickUp;}
+
+    public void setDropOff (String dropOff) {this.dropOff = dropOff;}
+
+    public void setpickupDate (Date pickupDate) {this.pickupDate = pickupDate;}
+
+    public void setdropoffDate (Date dropoffDate) {this.dropoffDate = dropoffDate;}
+
 
 
 }
